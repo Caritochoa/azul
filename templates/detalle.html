@@ -1,0 +1,50 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Detalle del Producto</title>
+	<link rel= "stylesheet" type = "text/css" href="{% static 'css/style.css' %}">
+	<meta charset="utf-8">
+</head>
+<body>
+
+<div id = "header" >
+
+<h2>La Era Azul</h2>
+
+<div class= "topnav">
+
+	<a class ="active" href="http://127.0.0.1:8000/">Home</a>	
+	<a href="/productos/">Tienda Online</a>
+	<a href="/contacto/">Soporte</a>
+</div>
+
+<center><table>
+<tr>
+	<th>
+		<img id= "detail" src="{% static 'img/Placeholder.jpg' %}">
+		
+	</th>
+	<th>
+		<h2>Titulo del Producto</h2><h3>Detalle del Producto</h3>
+		<p>Espacio reservado para una descripción detalla del Producto</p>
+		<p>$Precio del Producto</p>
+	</th>
+</tr>
+	
+
+</table></center>
+
+<footer>
+<center>
+<h2>Encuentranos en nuestras redes sociales</h2>
+<img src="{% static 'img/if_twitter.png' %}" width="64px" height="64px">
+<img src="{% static 'img/if_facebook.png' %}">
+</center> 
+	
+</footer>
+
+</body>
+</html>

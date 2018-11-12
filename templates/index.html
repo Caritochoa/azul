@@ -1,0 +1,80 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel= "stylesheet" type = "text/css" href="{% static 'css/style.css' %}">
+ 
+
+</head>
+<body>
+
+<div id="container">
+
+<div id = "header" >
+
+<h2>La Era Azul</h2>
+
+<div class= "topnav">
+	<a class ="active" href="">Home</a>	
+	<a href="/productos/">Tienda Online</a>
+	<a href="/contacto/">Soporte</a>
+</div>
+</div>
+
+<div id= "Slider">
+
+<img name="slide" width = "1200" height="300">
+
+</div>
+<div id = "grilla">
+<table>
+	<tr>
+	<th>Encuentra los mejores productos,<br> desarrolla tu espiritualidad</th>
+	<th><img id ="promo" src="{% static 'img/candle.jpg' %}"></th>
+	<th><img id ="promo" src="{% static 'img/candle_2.jpg' %}"></th>
+	<th><img id ="promo" src="{% static 'img/candle_3.jpg' %}"></th>
+	</tr>
+</table>
+
+<footer>
+<center>
+<h2>Encuentranos en nuestras redes sociales</h2>
+<img src="{% static 'img/if_twitter.png' %}" width="64px" height="64px">
+<img src="{% static 'img/if_facebook.png' %}">
+</center> 
+	
+</footer>
+<script type = "text/javascript" src = "{% static 'js/index.js' %}"></script>
+</div> <!container tag end>
+
+<script type="text/javascript">
+	var i = 0;
+        var imagenes = [];
+        var time = 3000;//intervalo de tiempo entre las imagenes
+    
+    //creo un array llamado imagenes
+    imagenes[0]="{% static 'img/yoga-banner.jpg'%}";
+    imagenes[1]="{% static 'img/chacras.jpg' %}";
+    imagenes[2]="{% static 'img/product.jpg' %}";
+    imagenes[3]="{% static 'img/images.jpeg' %}";
+
+    function changeImg(){//funcion para cambiar de imagen
+        document.slide.src = imagenes[i];
+        if(i < imagenes.length-1){
+            i++;
+        } else {
+            i=0;
+        }         
+    //metodo para que corra la funcion changeImg con el 
+    //intervalo establecido 
+    setTimeout(changeImg, time);l 
+    }
+
+    window.onload = changeImg;//carga en la ventana
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grilla de Productos</title>
+	<link rel= "stylesheet" type = "text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div id = "header" >
+
+<h2>La Era Azul</h2>
+
+<div class= "topnav">
+	<a class ="active" href="http://127.0.0.1:8000/">Home</a>	
+	<a href="/productos/">Tienda Online</a>
+	<a href="/contacto/">Soporte</a>
+</div>
+
+<center><table>
+	<tr>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/pillars-400.jpg' %}"></a></th>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/vela_bee.jpg' %}"></a></th>
+		<th><a href=/detalle/"><img id = "img_pr" src="{% static 'img/incense_flower.jpeg' %}"></a></th>
+		 
+	</tr>
+	<tr>
+		<th>Velas aromáticas <br> $29900</th>
+		<th>Vela orgánica<br> $49900</th>
+		<th>Flor de Incienso <br>$69900</th>
+		 
+	</tr>
+	<tr>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/eagle_wood.jpg' %}"></a></th>
+		<th><a href="/detalle/""><img id = "img_pr" src="{% static 'img/holder.jpg' %}"></a></th>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/mala_tibetano_.jpg' %}"></a></th>
+		
+	</tr>
+		<tr>
+		<th>Eagle Wood <br>$140000</th>
+		<th>Inciensario Bronce <br>$189000 </th>
+		<th>Mala Tibetano <br>$99900</th>
+		 
+	</tr>
+	<tr>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/7piedras.jpg' %}"></a></th>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/mala_pulsera.jpeg' %}"></a></th>
+		<th><a href="/detalle/"><img id = "img_pr" src="{% static 'img/candle_3.jpg' %}"></a></th>		
+	</tr>
+	<tr>
+		<th>Mala de los 7 chacras<br>$79900</th>
+		<th>Pulsera de Sándalo<br>$60000</th>
+		<th>Velas aromáticas vainilla<br>$49900</th>
+		 
+	</tr>
+</table></center>
+
+
+<footer>
+<center>
+<h2>Encuentranos en nuestras redes sociales</h2>
+<img src="{% static 'img/if_twitter.png' %}" width="64px" height="64px">
+<img src="{% static 'img/if_facebook.png' %}">
+</center> 
+	
+</footer>
+
+</body>
+</html>
